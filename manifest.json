@@ -1,0 +1,55 @@
+{
+	"applications": {
+		"gecko": {
+			"id": "classroominfo@mkreators.com",
+			"strict_min_version": "57.0"
+		}
+	},
+	"author": "Mohamed Mubaraq",
+	"background": {
+		"scripts": [
+			"js/background.js"
+		]
+	},
+	"browser_action": {
+		"browser_style": true,
+		"default_icon": "icons/class.svg",
+		"default_title": "Classroom Information",
+		"default_popup": "static/popup.html"
+	},
+	"content_scripts": [
+		{
+			"js": [
+				"js/content.js"
+			],
+			"matches": [
+				"http://*/*",
+				"https://*/*"
+			],
+			"run_at": "document_end"
+		}
+	],
+	"description": "Shows only relevant classroom information",
+	"homepage_url": "https://github.com/dicryptor",
+	"icons": {
+		"16": "icons/class.svg",
+		"19": "icons/class.svg",
+		"24": "icons/class.svg",
+		"32": "icons/class.svg",
+		"38": "icons/class.svg",
+		"48": "icons/class.svg",
+		"64": "icons/class.svg",
+		"72": "icons/class.svg",
+		"96": "icons/class.svg",
+		"128": "icons/class.svg",
+		"256": "icons/class.svg"
+	},
+	"manifest_version": 2,
+	"name": "Classroom Information",
+	"permissions": [
+		"tabs",
+		"webRequest"
+	],
+	"short_name": "Class Info",
+	"version": "1.0.0"
+}
