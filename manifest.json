@@ -23,8 +23,7 @@
 				"js/content.js"
 			],
 			"matches": [
-				"http://*/*",
-				"https://*/*"
+				"https://portal.psb-academy.edu.sg/*"
 			],
 			"run_at": "document_end"
 		}
